@@ -2,11 +2,11 @@
 
 **WLED Controller** is a compact, **single-sided PCB** designed to run WLED firmware and control **two addressable LED strips**. It is powered entirely via **USB-C Power-Delivery** and supports either **5V or 12V** LED strips, with a maximum power of **60W**. Compatible with popular LED types such as **WS2812B** (5V) and **WS2815** (12V). It offers a clean, efficient solution for custom lighting projects.
 
-![PCB top view](images/pcb-top-view.jpg)
+<img src="images/pcb-top-view.jpg" width="100%">
 
 ## Block diagram
 
-![Block diagram](images/block-diagram.svg)
+<img src="images/block-diagram.svg" width="100%">
 
 The entire board is powered via the USB-C connector. Voltage and current levels are negotiated through the TPS25730D USB Power Delivery (PD) controller, based on onboard configuration resistors. The supported input range is 5–20 V and 0.5–5 A, and the controller always negotiates the highest available voltage profile supported by the connected power adapter. These voltage/current profiles can be customized by soldering different resistor values.
 
@@ -22,7 +22,7 @@ The USB-C connector also provides a direct connection to the ESP32 via the USB 2
 
 ## PCB description
 
-![PCB description](images/pcb-description.png)
+<img src="images/pcb-description.png" width="100%">
 
 1. **USB-C connector.** Used for flashing the WLED firmware onto the ESP32 and for powering the entire board—including connected LED strips—via the USB Power Delivery (PD) protocol. Ensure you use a high-quality USB-C cable capable of handling the required current.
 2. **LED output 1.** Connector for the first LED strip, providing power (+/-) and data signals.
