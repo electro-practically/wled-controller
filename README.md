@@ -42,20 +42,6 @@ The USB-C connector also provides a direct connection to the ESP32 via the USB 2
 
 ## Bring-up guide
 
-Follow these steps to flash the WLED firmware and to configure it:
-
-1. Set 5V or 12V jumper as your connected LED strips.
-1. Add jumper on the BOOT connector (7) to switch the ESP32 into bootloader mode.
-1. Connect board with USB-C cable into PC.
-1. Remove the BOOT jumper (7).
-2. Install WLED software per official docs at [kno.wled.ge](https://kno.wled.ge/basics/install-binary/)
-1. Configure WLED per offcial docs. In the LED Preferences settings category set:
-    1. **LED1 Data GPIO**: 7
-    2. **LED2 Data GPIO**: 6
-    3. **Relay GPIO**: 10, no invert, no open drain
-1. Disconnect the PC and connect proper power adapter
-1. Enjoy
-
 Follow these steps to flash the WLED firmware and configure the board:
 
 1. Set the LED voltage jumper (5 V or 12 V) according to your connected LED strips.
@@ -69,6 +55,14 @@ Follow these steps to flash the WLED firmware and configure the board:
     3. **Relay GPIO**: 10 (no invert, no open drain)
 7. Disconnect the USB from your PC and connect a suitable power adapter via USB-C.
 8. Setup complete - the board is ready to use.
+
+## Thermal consideration
+
+If you power a long LED strip with relatively high power consumption, it may be necessary to provide heat dissipation for the controller - for example, using an aluminum case or a case with a fan. Most of the heat is dissipated by the SiC437 buck converter.
+
+## Input power source type
+
+The controller was tested with a standard USB power brick used for phone charging with USB Power Delivery capability. However, it should also work with other USB-C devices that support Power Delivery in source mode - for example, power banks, monitors, laptops, and similar devices. If you plan to power the controller from such a source, ensure that it supports the required USB PD power profile.
 
 ## License
 
