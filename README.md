@@ -48,7 +48,7 @@ Follow these steps to flash the WLED firmware and configure the board:
 2. Place a jumper on the BOOT connector to put the ESP32 into bootloader mode.
 3. Connect the board to your PC using a USB-C cable.
 4. Once connected, remove the BOOT jumper.
-5. Install the WLED firmware following the official instructions: [kno.wled.ge](https://kno.wled.ge/basics/)
+5. Install the WLED firmware following the official instructions: [kno.wled.ge](https://kno.wled.ge/basics/getting-started/)
 6. Configure WLED as follows (see LED Preferences settings category in the web UI):
     1. **LED1 Data GPIO**: 7
     2. **LED2 Data GPIO**: 6
